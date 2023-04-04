@@ -43,7 +43,7 @@ export default defineComponent({
           formData.append('num_chunks', numChunks.toString());
 
           try {
-            const res: AxiosResponse = await axios.post('http://192.168.2.18:8181/upload', formData, {
+            const res: AxiosResponse = await axios.post('http://localhost:8000/upload', formData, {
               onUploadProgress: (progressEvent) => {
                 // const percentCompleted = Math.round(
                 //   (progressEvent.loaded * 100) / progressEvent.total
